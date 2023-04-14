@@ -160,8 +160,16 @@
                   }
                 ],
                 "DefaultCacheBehavior": {
-                  "AllowedMethods": ["GET", "HEAD", "OPTIONS"],
-                  "CachedMethods": ["GET", "HEAD", "OPTIONS"],
+                  "AllowedMethods": [
+                    "GET",
+                    "HEAD",
+                    "OPTIONS"
+                  ],
+                  "CachedMethods": [
+                    "GET",
+                    "HEAD",
+                    "OPTIONS"
+                  ],
                   "ForwardedValues": {
                     "Headers": [
                       "Access-Control-Request-Headers",
@@ -202,7 +210,10 @@
           },
           "WebAppCloudFrontDistributionOutput": {
             "Value": {
-              "Fn::GetAtt": ["WebAppCloudFrontDistribution", "DomainName"]
+              "Fn::GetAtt": [
+                "WebAppCloudFrontDistribution",
+                "DomainName"
+              ]
             }
           }
         }
@@ -298,7 +309,10 @@
       "s3LocalPath": "dist/app/",
       "s3BucketName": "aws-epam-training-angular-new"
     },
-    "plugins": ["serverless-finch", "serverless-single-page-app-plugin"],
+    "plugins": [
+      "serverless-finch",
+      "serverless-single-page-app-plugin"
+    ],
     "pluginsData": {},
     "functions": {},
     "resources": {
@@ -380,8 +394,16 @@
                 }
               ],
               "DefaultCacheBehavior": {
-                "AllowedMethods": ["GET", "HEAD", "OPTIONS"],
-                "CachedMethods": ["GET", "HEAD", "OPTIONS"],
+                "AllowedMethods": [
+                  "GET",
+                  "HEAD",
+                  "OPTIONS"
+                ],
+                "CachedMethods": [
+                  "GET",
+                  "HEAD",
+                  "OPTIONS"
+                ],
                 "ForwardedValues": {
                   "Headers": [
                     "Access-Control-Request-Headers",
@@ -414,7 +436,10 @@
         },
         "WebAppCloudFrontDistributionOutput": {
           "Value": {
-            "Fn::GetAtt": ["WebAppCloudFrontDistribution", "DomainName"]
+            "Fn::GetAtt": [
+              "WebAppCloudFrontDistribution",
+              "DomainName"
+            ]
           }
         }
       }
@@ -441,7 +466,7 @@
     "isDashboardMonitoringPreconfigured": false
   },
   "package": {
-    "artifactDirectoryName": "serverless/shop-angular-cloudfront-new/dev/1680002893718-2023-03-28T11:28:13.718Z",
+    "artifactDirectoryName": "serverless/shop-angular-cloudfront-new/dev/1681425419882-2023-04-13T22:36:59.882Z",
     "artifact": ""
   }
 }
